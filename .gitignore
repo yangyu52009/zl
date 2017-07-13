@@ -30,3 +30,14 @@
 *.exe
 *.out
 *.app
+*.Debug
+*.Release
+blogapp/controllers/Makefile
+blogapp/helpers/Makefile
+blogapp/views/_src/Makefile
+blogapp/views/Makefile
+blogapp/models/Makefile
+blogapp/log/treefrog.log
+blogapp/log/query.log
+blogapp/log/app.log
+blogapp/log/access.log

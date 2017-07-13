@@ -1,17 +1,16 @@
-#include "blogcontroller.h"
+﻿#include "blogcontroller.h"
 #include "blog.h"
-
 
 void BlogController::index()
 {
-    auto blogList = Blog::getAll();
-    texport(blogList);
-    render();
+    auto blogList = Blog::getAll(); //取得一个存放所有的Blog模型对象的列表
+    texport(blogList); //吧这个列表传递给 View 层
+    render(); //重新的生成View 层（模板）
 }
 
 void BlogController::show(const QString &id)
 {
-    auto blog = Blog::get(id.toInt());
+    auto blog = Blog::get(id.toInt());//根据主键取得对象的Blog对象
     texport(blog);
     render();
 }
